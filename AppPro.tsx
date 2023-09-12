@@ -1,14 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 
-import {
-  Text,
-  View,
-  SafeAreaView,
-  TextInput,
-  StyleSheet,
-  useColorScheme,
-} from 'react-native';
+import {Text, View, TextInput, StyleSheet, useColorScheme} from 'react-native';
 
 function AppPro(): JSX.Element {
   const isDarkMode = useColorScheme() === 'light';
