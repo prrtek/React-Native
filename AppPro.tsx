@@ -1,31 +1,22 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
+import {
+  Text,
+  View,
+  SafeAreaView,
+  StyleSheet,
+  useColorScheme,
+} from 'react-native';
 
-import {Text, View, TextInput, StyleSheet, useColorScheme} from 'react-native';
-
-function AppPro(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'light';
+function AppPro() {
+  const isDarkMode = useColorScheme() === 'dark';
+  const backgroundStyle = {
+    backgroundColor: isDarkMode ? 'black' : 'white',
+  };
   return (
-    <View style={styles.container}>
-      <TextInput>Default</TextInput>
-      <Text style={isDarkMode ? styles.whiteText : styles.blackText}>
-        Prateek
-      </Text>
-    </View>
+    <SafeAreaView style={backgroundStyle}>
+      <View style={styles.container}>
+        <Text style={styles.text}>HII</Text>
+      </View>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  whiteText: {
-    color: 'white',
-  },
-  blackText: {
-    color: 'black',
-  },
-});
-
-export default AppPro;

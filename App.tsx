@@ -1,18 +1,11 @@
 import React from 'react';
-
-import {View, Text, SafeAreaView, TextInput} from 'react-native';
-
-const name = 'Prateek';
-
+import {Text, View, TextInput, StyleSheet, useColorScheme} from 'react-native';
+import FlatCards from './components/FlatCards';
 function App() {
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Hi {name}</Text>
-        <TextInput>Hii</TextInput>
-      </View>
-    </SafeAreaView>
+    <View>
+      <FlatCards />
+    </View>
   );
 }
-
 export default App;
