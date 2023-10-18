@@ -10,4 +10,5 @@ import {name as appName} from './app.json';
 // import Buttons from './components/Buttons';
 import FlatCards from './components/FlatCards';
 import Password from './components/Password';
-AppRegistry.registerComponent(appName, () => Password);
+import Bg from './components/Bg';
+AppRegistry.registerComponent(appName, () => Bg);
