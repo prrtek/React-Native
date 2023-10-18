@@ -9,4 +9,5 @@ import {name as appName} from './app.json';
 // import ImageUse from './components/ImageUse';
 // import Buttons from './components/Buttons';
 import FlatCards from './components/FlatCards';
-AppRegistry.registerComponent(appName, () => App);
+import Password from './components/Password';
+AppRegistry.registerComponent(appName, () => Password);
